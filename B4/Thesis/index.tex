@@ -1,0 +1,118 @@
+% \documentclass[12pt]{jarticle} 
+% %\documentstyle[12pt,fleqn,epsf,iepaper,cite]{jarticle}
+% %\documentstyle[12pt,iepaper,eclepsf,oddchar]{jarticle}
+% \usepackage[dvipdfm]{graphicx}
+% \usepackage{iepaper}
+% \usepackage{epsf}
+% \usepackage{ccaption}
+% \usepackage{algorithm}
+% \usepackage{algorithmic}
+% \usepackage{subcaption}
+% \usepackage{enumerate}
+% \usepackage{comment}
+% \usepackage{url}
+% \usepackage{multirow}
+% \usepackage{diagbox}
+% \usepackage{amssymb}
+% \usepackage{mathtools}
+% \usepackage{wrapfig}
+% \usepackage{graphicx}
+% \usepackage{float}
+% \usepackage{amsmath}
+% \usepackage{lipsum}
+% \usepackage[jis2004]{otf}
+
+\documentclass[12pt]{jarticle} 
+%\documentstyle[12pt,fleqn,epsf,iepaper,cite]{jarticle}
+%\documentstyle[12pt,iepaper,eclepsf,oddchar]{jarticle}
+\usepackage{graphicx}
+\usepackage[dvipdfm]{color}
+\usepackage{iepaper}
+\usepackage{epsf}
+\usepackage{ccaption}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage{comment}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage[jis2004]{otf}
+\usepackage{bm}
+
+%ナレッジグラフ, ファインチューニング, マスク, ヘッド, リレーション, テール
+
+\title{Masked Language Modeling を用いた \par Knowledge Graph 補完手法の提案}
+\author{堀本 隆誠} 
+\gakuseki{1201201120}[B]  %卒論はB，修論はM
+\group{第 1 研究グループ}            % 卒論の場合
+\shidou{森 直樹 教授}                          % 卒論の場合
+%\syusa{教授}                            % 修論の場合
+%\hukusa{教授}{教授}
+
+%図番号を「(section番号).(図番号)」とするため
+\makeatletter
+ \renewcommand{\thefigure}{%
+   \thesection.\arabic{figure}}
+  \@addtoreset{figure}{section}
+\makeatother
+
+\makeatletter
+ \renewcommand{\thetable}{%
+   \thesection.\arabic{table}}
+  \@addtoreset{table}{section}
+\makeatother
+
+\makeatletter
+ \renewcommand{\theequation}{%
+   \thesection.\arabic{equation}}
+  \@addtoreset{equation}{section}
+\makeatother
+
+
+\begin{document} 
+\maketitle 
+\pagenumbering{roman} 
+%%% 目次
+\tableofcontents
+\newpage
+%
+%% 図一覧
+\listoffigures
+\newpage 
+
+%% 表一覧
+ \listoftables
+ \newpage
+
+\pagenumbering{arabic} 
+
+% 文書開始
+\include{./doc/introduction}
+\clearpage
+
+\include{./doc/tech}
+
+\include{./doc/propose}
+
+\include{./doc/experiment}
+
+\include{./doc/conclusion}
+
+%謝辞
+\clearpage
+\include{./doc/shaji}
+
+% 参考文献
+\clearpage
+\include{./doc/bibliography}
+
+
+\end{document}

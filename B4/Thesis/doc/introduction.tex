@@ -1,0 +1,12 @@
+\newpage
+\changeindent{0cm}
+\section{はじめに}
+\changeindent{2cm}
+
+%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
+
+近年, 人工知能技術は急速な発展を遂げている. その中で人間の知識をグラフ構造で表現する Knowledge Graph \cite{kg} が注目を集めており, 人工知能の基盤技術としてさまざまな分野で活用されている. Knowledge Graph はさまざまな知識とそのつながりをグラフ構造を用いて表現するデータ構造である. 多種多様な情報とそのつながりを体系的に表現できるという利点や, 数値や有限の属性値に限らず自然言語文や音声データといった非構造データを情報として扱えるという利点がある. これらの利点は, 1 つの概念に対する情報を得たいときにそれにつながるさまざまな知識を得られるという点で有用である. また, グラフ構造を体系的にまとめることで効率よく検索ができるという点でも有用である. これらの特性から, Knowledge Graph は Google の Google Knowledge Graph \cite{google_knowledge_graph} などで使用されている. \par
+Knowledge Graph への注目に伴い, 機械学習を用いて Knowledge Graph を表現することの気運が高まっている. 機械学習を利用する利点として, Knowledge Graph の特徴を活かすことで蓄積されたさまざまな種類のデータとそのつながりから従来の単一的な情報では得られなかった新しい知識が得られる点がある. しかし, Knowledge Graph 内の知識とそれらの関係を人手ですべて網羅するには多大なコストがかかる. この問題を解決するために Knowledge Graph 内の関係を基に含まれていない関係を自動的に補完する Knowledge Graph 補完が用いられる. Knowledge Graph 補完は, Knowledge Graph 内の知識を k$_{1}$, k$_{2}$, それらの関係を r としたとき, (k$_{1}$, r, k$_{2}$) に対して k$_{1}$, r の情報から k$_{2}$ を回答し, 知識間の関係性を予測する. 従来の Knowledge Graph 補完手法として Knowledge Graph Embedding 手法がある. この手法は知識と関係をそれぞれ実数値ベクトルとして Triple (3 つ組) で表し, これらのベクトルを用いて Triple の妥当性を評価する. しかし, ほとんどの Knowledge Graph Embedding モデルは Triple の構造情報しか使用しないため, 知識自体の意味情報を効果的に捉えていない. \par
+ELMo \cite{ELMo}, BERT \cite{BERT}, および XLNet \cite{XLNet} などの事前学習済み言語モデルは自然言語処理で大きな成功を収めている. これらのモデルは大量の自由なテキストデータで文脈化された単語埋め込みを学習し, 多くの言語処理タスクで最先端の性能を示している. 特に BERT は, Masked Language Modeling (MLM) と Next Sentence Prediction (NSP) を通じて双方向 Transformer エンコーダを事前学習することで豊かな言語情報を扱うことができるという点で注目されている. \par
+本研究では, 知識自体の意味情報を効果的に捉えるために事前学習済みの言語モデルである BERT の MLM を使用して Knowledge Graph を補完する手法を提案する. 知識, 関係, および Triple をテキストシーケンスとして BERT の MLM の入力文とすることで, 知識間の関係性を予測する. 提案手法について, BERT を用いた Knowledge Graph 補完手法である KG-BERT \cite{KG-BERT} との比較実験により有効性を示す. \par
+本論文では, 2 章で関連する要素技術について紹介する. 3 章で本研究の提案手法について述べる. 4 章で数値実験により提案手法の有効性を確認する. 5 章でまとめと今後の課題を示す. \par

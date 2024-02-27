@@ -1,0 +1,9 @@
+\newpage
+\changeindent{0cm}
+\section{まとめと今後の課題}
+\changeindent{2cm}
+
+本研究では, 言語情報を含む Knowledge Graph に対して BERT の MLM を用いて Knowledge Graph 補完として Tail を予測するモデルおよびその学習方法を提案した. \par
+Tail の説明文も入力する実験 1 において比較手法の KG-BERT を上回る結果が得られた. これにより, BERT の MLM を用いた Knowledge Graph 補完手法の有効性が確認できた. Head と Relation の情報のみから Tail を予測する実験 2 において Hits@$1$ は KG-BERT と同程度の結果が得られたが, その他の評価指標は KG-BERT を下回る結果となった. また, 提案手法で予測でき, KG-BERT で予測できなかった Triple があることを確認した. 実験 1 では Tail の説明文に含まれる単語を重視して Tail を予測し, 実験 2 では Head の説明文に含まれる単語を重視して Tail を予測することで KG-BERT では予測できなかった Tail を予測できたと考えられる. \par
+今後の課題として, 予測精度の向上のためにパラメータの調整や MLM の出力候補を BERT に登録されている単語ではなく WN18RR の Entity に存在する単語のみに限定したモデルの作成が挙げられる. さらに, 本研究では計測できていない予測結果の Rank の平均を評価指標として追加することや, 提案手法の実用的な使用法について Knowledge Graph 補完だけでなく他の使用法を検討することなどがある. 例えば, 既存の Knowledge Graph において新たな関係性の発見の手助けなどが挙げられる. 
+\par
