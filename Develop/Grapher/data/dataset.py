@@ -1,6 +1,6 @@
 import pytorch_lightning as pl
-from corpusreader.benchmark_reader import Benchmark
-from corpusreader.benchmark_reader import select_files
+from corpusreader_1.benchmark_reader import Benchmark
+from corpusreader_1.benchmark_reader import select_files
 import os
 import json
 import unicodedata as ud
