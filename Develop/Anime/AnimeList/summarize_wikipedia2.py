@@ -180,7 +180,8 @@ if __name__ == "__main__":
             chunk_summary = []
             for document in docs:
                 output = create_structured_chunk_summary(document)
-                f.write("\n【wikipedia 記事】:\n", document, "\n【要約】:\n", output)
+                content_to_save = f"\n【wikipedia 記事】:\n{document}\n【要約】:\n{output}"
+                f.write(content_to_save)
                 chunk_summary.append(output)
             
         chunk_summary = '\n'.join(chunk_summary)
@@ -194,5 +195,6 @@ if __name__ == "__main__":
 
         with open(filename, 'a', encoding='utf-8') as f:
             # ファイルに文字列を書き込む
-            f.write("\n【最終的な要約】:\n", summary)
+            content_to_save = f"\n【最終的な要約】:\n{summary}"
+            f.write(content_to_save)
         print(f"結果を '{filename}' に保存しました。")
