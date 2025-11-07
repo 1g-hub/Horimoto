@@ -8,6 +8,8 @@ Knowledge Graph の研究
 
 Marvel 映画は現在落ち気味 (20231005)
 
+Marvel 映画の来年公開 Avengers: Doomsday が楽しみ（20251106）
+
 ## ディレクトリの構成
 
 <pre>
