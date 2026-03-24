@@ -1,0 +1,482 @@
+[
+  {
+    "id": "cam_pan",
+    "word": ["PAN", "→", "←", "パン"],
+    "category": "camera_movement",
+    "meaning": "カメラを水平方向に移動させるカメラワーク。矢印は移動方向を示す。"
+  },
+  {
+    "id": "cam_qpan",
+    "word": ["QPAN", "クイックパン"],
+    "category": "camera_movement",
+    "meaning": "高速でカメラを水平方向に移動させるカメラワーク。通常のPANより素早くカメラを動かす。"
+  },
+  {
+    "id": "cam_follow",
+    "word": ["Follow", "follow", "F"],
+    "category": "camera_movement",
+    "meaning": "被写体の動きに合わせてカメラが追従する。"
+  },
+  {
+    "id": "cam_back",
+    "word": ["back"],
+    "category": "camera_movement",
+    "meaning": "カメラが後退する動き。"
+  },
+  {
+    "id": "cam_slide",
+    "word": ["slide", "スライド"],
+    "category": "camera_movement",
+    "meaning": "カメラを横方向に平行移動させる。"
+  },
+  {
+    "id": "cam_fix",
+    "word": ["FIX"],
+    "category": "camera_movement",
+    "meaning": "カメラを固定し、動かさない。"
+  },
+  {
+    "id": "cam_up",
+    "word": ["UP"],
+    "category": "camera_movement",
+    "meaning": "カメラを上方向に移動させる。"
+  },
+  {
+    "id": "cam_down",
+    "word": ["DOWN"],
+    "category": "camera_movement",
+    "meaning": "カメラを下方向に移動させる。"
+  },
+  {
+    "id": "cam_pull",
+    "word": ["引き"],
+    "category": "camera_movement",
+    "meaning": "被写体から距離を取る方向にカメラを動かす。"
+  },
+  {
+    "id": "cam_stop",
+    "word": ["stop"],
+    "category": "camera_movement",
+    "meaning": "カメラ移動を停止する。"
+  },
+  {
+    "id": "cam_fairing",
+    "word": ["フェアリング"],
+    "category": "camera_movement",
+    "meaning": "PANの終点などで、動きをゆっくり減速させて止める演出。"
+  },
+  {
+    "id": "cam_angle_aori",
+    "word": ["アオリ"],
+    "category": "camera_angle",
+    "meaning": "被写体を下から見上げる構図。"
+  },
+  {
+    "id": "cam_angle_name",
+    "word": ["ナメ"],
+    "category": "camera_angle",
+    "meaning": "前景越しに被写体を見る構図。"
+  },
+  {
+    "id": "frame_tu",
+    "word": ["T.U"],
+    "category": "framing",
+    "meaning": "タイトアップ。被写体に強く寄った構図。"
+  },
+  {
+    "id": "frame_tb",
+    "word": ["T.B"],
+    "category": "framing",
+    "meaning": "タイトバスト。胸から上を中心にした構図。"
+  },
+  {
+    "id": "frame_wide",
+    "word": ["全景"],
+    "category": "framing",
+    "meaning": "広い範囲を映すワイドショット。"
+  },
+  {
+    "id": "frame_adjust",
+    "word": ["サイズ調整"],
+    "category": "framing",
+    "meaning": "フレーミングのサイズを変更する。"
+  },
+  {
+    "id": "frame_out",
+    "word": ["フレームアウト"],
+    "category": "framing",
+    "meaning": "被写体が画面外に出る。"
+  },
+  {
+    "id": "focus_pin",
+    "word": ["ピン"],
+    "category": "focus",
+    "meaning": "ピントが合っている状態。"
+  },
+  {
+    "id": "focus_boke",
+    "word": ["ボケ", "ぼけ", "ピンボケ"],
+    "category": "focus",
+    "meaning": "ピントが合っていない、または背景などをぼかす表現。"
+  },
+  {
+    "id": "edit_cut",
+    "word": ["cut", "カット"],
+    "category": "editing",
+    "meaning": "画面を切り替える編集点。"
+  },
+  {
+    "id": "edit_wipe",
+    "word": ["wipe"],
+    "category": "editing",
+    "meaning": "ワイプによる画面切り替え。"
+  },
+  {
+    "id": "edit_overlap",
+    "word": ["O.L", "L/O", "LO"],
+    "category": "editing",
+    "meaning": "オーバーラップ。画面や音が重なりながら切り替わる。"
+  },
+  {
+    "id": "fade_in",
+    "word": ["IN"],
+    "category": "editing",
+    "meaning": "フェードイン。画面が徐々に表示される。"
+  },
+  {
+    "id": "fade_out",
+    "word": ["OUT"],
+    "category": "editing",
+    "meaning": "フェードアウト。画面が徐々に消える。"
+  },
+  {
+    "id": "sound_se",
+    "word": ["SE", "S"],
+    "category": "sound",
+    "meaning": "効果音。"
+  },
+  {
+    "id": "sound_on",
+    "word": ["on"],
+    "category": "sound",
+    "meaning": "画面内の音。"
+  },
+  {
+    "id": "sound_off",
+    "word": ["off"],
+    "category": "sound",
+    "meaning": "画面外から聞こえる音。"
+  },
+  {
+    "id": "effect_steam",
+    "word": ["湯気FX"],
+    "category": "effect",
+    "meaning": "湯気のエフェクト。"
+  },
+  {
+    "id": "effect_flash",
+    "word": ["フラッシュ"],
+    "category": "effect",
+    "meaning": "瞬間的な強い発光表現。"
+  },
+  {
+    "id": "effect_glow",
+    "word": ["グローフィルター"],
+    "category": "effect",
+    "meaning": "光をにじませるフィルター効果。"
+  },
+  {
+    "id": "effect_light",
+    "word": ["入射光"],
+    "category": "effect",
+    "meaning": "画面内に光が差し込む演出。"
+  },
+  {
+    "id": "timing_mn",
+    "word": ["m+n"],
+    "category": "timing",
+    "meaning": "m秒nコマを表す時間指定（24fps基準）。"
+  },
+  {
+    "id": "timing_frame",
+    "word": ["フレーム"],
+    "category": "timing",
+    "meaning": "コマ単位の時間指定。"
+  },
+  {
+    "id": "structure_repeat",
+    "word": ["作画リピート"],
+    "category": "animation",
+    "meaning": "同じ作画を繰り返し使用する。"
+  },
+  {
+    "id": "structure_insert",
+    "word": ["インサート"],
+    "category": "structure",
+    "meaning": "短い挿入カット。"
+  },
+  {
+    "id": "structure_separator",
+    "word": ["× × ×"],
+    "category": "structure",
+    "meaning": "演出的な区切りを示す記号。"
+  },
+  {
+    "id": "part_a",
+    "word": ["Apart", "Aパート"],
+    "category": "structure",
+    "meaning": "Aパート。前半。"
+  },
+  {
+    "id": "part_b",
+    "word": ["Bpart", "Bパート"],
+    "category": "structure",
+    "meaning": "Bパート。後半。"
+  }, 
+   {
+    "id": "effect_steam_fx",
+    "word": ["湯気FX"],
+    "category": "effect",
+    "意味": "湯気を撮影処理として合成するエフェクト。半透明表現として扱われ、フィルム時代の撮影手法の名残としてFX（Effect）の名称が使われている。"
+  },
+  {
+    "id": "effect_double_exposure",
+    "word": ["Wラシ", "ダブラシ", "wxp"],
+    "category": "effect",
+    "意味": "ダブルエクスポージャー（二重露光）由来の表現手法。影・水・ガラスなど半透明な要素を表現するために用いられる。フィルム時代の撮影手法名がデジタル作業にも引き継がれている。"
+  },
+  {
+    "id": "symbol_arrow_down",
+    "word": ["↓"],
+    "category": "mark",
+    "意味": ""
+  },
+  {
+    "id": "camera_yori",
+    "word": ["ヨリ"],
+    "category": "camera_movement",
+    "意味": "被写体に近づくカメラワーク。画面サイズが小さくなり、注目を強める。"
+  },
+  {
+    "id": "camera_tome",
+    "word": ["トメ"],
+    "category": "camera_movement",
+    "意味": "動いていたカメラや被写体の動きを止める演出。"
+  },
+  {
+    "id": "symbol_angle_bracket",
+    "word": ["＜"],
+    "category": "mark",
+    "意味": ""
+  },
+  {
+    "id": "camera_koboshi",
+    "word": ["↓こぼし", "こぼし"],
+    "category": "camera_movement",
+    "意味": "画面下方向に情報をこぼす、または意図的にフレーム外へ逃がす演出。"
+  },
+  {
+    "id": "effect_fx_generic",
+    "word": ["FX"],
+    "category": "effect",
+    "意味": "エフェクト（Effect）の略称。撮影処理・合成・視覚効果全般を指す。"
+  },
+  {
+    "id": "camera_screen_move",
+    "word": ["画面動"],
+    "category": "camera_movement",
+    "意味": "画面全体を動かす演出。背景・前景を含めた画面移動を指す。"
+  },
+  {
+    "id": "camera_slow_move",
+    "word": ["じわ"],
+    "category": "camera_movement",
+    "意味": "非常にゆっくりとしたカメラ移動や変化を示す。"
+  },
+  {
+    "id": "structure_multi",
+    "word": ["マルチ"],
+    "category": "structure",
+    "意味": "複数画面・多重構成による画面演出。"
+  },
+  {
+    "id": "edit_flashback",
+    "word": ["回想"],
+    "category": "editing",
+    "意味": "過去の出来事を描写するためのシーン切り替え。"
+  },
+  {
+    "id": "edit_flashback_end",
+    "word": ["回想明け"],
+    "category": "editing",
+    "意味": "回想シーンから現代の時間軸へ戻ることを示す。"
+  },
+  {
+    "id": "camera_pull_back",
+    "word": ["引き"],
+    "category": "camera_movement",
+    "意味": "被写体から離れる方向にカメラを動かす。"
+  },
+  {
+    "id": "structure_reuse",
+    "word": ["流用"],
+    "category": "production",
+    "意味": "既存の作画やカットを再利用すること。新規作画を行わず制作コストを抑える目的で使用される。"
+  },
+  {
+    "id": "structure_episode_reuse",
+    "word": ["話数内流用"],
+    "category": "production",
+    "意味": "同一話数内で、既に使用した作画やカットを再利用すること。"
+  },
+  {
+    "id": "structure_shared_use",
+    "word": ["兼用"],
+    "category": "production",
+    "意味": "複数のカットやシーンで同一素材を共有して使用すること。"
+  },
+  {
+    "id": "dialogue_tail_line",
+    "word": ["カット尻セリフ"],
+    "category": "dialogue",
+    "意味": "カットの終わり（カット尻）に重ねて入る台詞。次のカットへ音声が継続する場合が多い。"
+  },
+  {
+    "id": "dialogue_monologue",
+    "word": ["M", "Ｍ"],
+    "category": "dialogue",
+    "意味": "モノローグ（心の声）。画面内で口は動かず、内面の思考として再生される台詞。"
+  },
+  {
+    "id": "structure_cut_end",
+    "word": ["カット尻"],
+    "category": "editing",
+    "意味": "カットの終了部分。画面や音の切れ目、次カットへの接続点を指す。"
+  },
+  {
+    "id": "focus_pin_okuri",
+    "word": ["ピン送り"],
+    "category": "focus",
+    "意味": "ピント位置を移動させる演出。フォーカスを意図的に切り替える。"
+  },
+  {
+    "id": "focus_pin_okuri_depth",
+    "word": ["ピン送り（奥から手前）"],
+    "category": "focus",
+    "意味": "奥に合っていたピントを手前の被写体へ送るフォーカス操作。"
+  },
+  {
+    "id": "camera_vertical_move",
+    "word": ["上→下へ"],
+    "category": "camera_movement",
+    "意味": "カメラを上方向から下方向へ移動させる動き。"
+  },
+  {
+    "id": "sound_gaya",
+    "word": ["ガヤ"],
+    "category": "sound",
+    "意味": "群衆や周囲のざわめきなど、特定の話者を持たない環境音・雑踏音。"
+  },
+  {
+    "id": "sound_echo",
+    "word": ["エコー"],
+    "category": "sound",
+    "意味": "音声や効果音に残響を加える処理。空間的な広がりや心理的効果を強調する。"
+  },
+  {
+    "id": "effect_afterimage_echo_style",
+    "word": ["残像エコー風"],
+    "category": "effect",
+    "意味": "残像とエコーを組み合わせたような視覚演出。実処理ではなく演出的な指定を示す場合が多い。"
+  },
+  {
+    "id": "effect_afterimage_echo_process_style",
+    "word": ["残像エコー処理風"],
+    "category": "effect",
+    "意味": "残像エコーのような効果を撮影処理で再現する指定。実際の処理内容は撮影工程に委ねられる。"
+  },
+  {
+    "id": "structure_cut_head",
+    "word": ["カット頭"],
+    "category": "editing",
+    "意味": "カットの開始部分。動作や演出の基準点として使われる。"
+  },
+  {
+    "id": "effect_focus_blur",
+    "word": ["集中ブラー"],
+    "category": "effect",
+    "意味": "画面中心に意識を集中させるため、周囲をぼかす演出。スピード感や心理的集中を強調する。"
+  },
+  {
+    "id": "camera_tsuke_pan",
+    "word": ["つけPAN"],
+    "category": "camera_movement",
+    "意味": "被写体の動きに合わせて付随するように行うパン。被写体追従を強調する。"
+  },
+  {
+    "id": "sound_sl",
+    "word": ["S.L"],
+    "category": "sound",
+    "意味": "サウンドレベル、または音量指定を示す略記。詳細な解釈は文脈依存。"
+  },
+  {
+    "id": "effect_slow",
+    "word": ["スロー"],
+    "category": "effect",
+    "意味": "時間を遅く見せるスローモーション演出。"
+  },
+  {
+    "id": "production_animation",
+    "word": ["作画"],
+    "category": "production",
+    "意味": "キャラクターや背景などの絵を描く作業、またはその作画内容を指す。"
+  },
+  {
+    "id": "structure_missing_number",
+    "word": ["欠番"],
+    "category": "structure",
+    "意味": "カット番号や話数番号が意図的に欠けている状態。制作上の都合による。"
+  },
+  {
+    "id": "animation_hold_frame",
+    "word": ["トメ絵"],
+    "category": "animation",
+    "意味": "動きを止めた1枚絵で見せる作画。動作の強調や間を作る目的で使用される。"
+  },
+  {
+    "id": "camera_ponyori",
+    "word": ["ポンヨリ"],
+    "category": "camera_movement",
+    "意味": "軽く寄る、または弾むように寄るニュアンスを持つ演出的表現。厳密な定義は文脈依存。"
+  },
+  {
+    "id": "production_add",
+    "word": ["足し"],
+    "category": "production",
+    "意味": "既存の作画や素材に追加要素を加えること。"
+  },
+  {
+    "id": "production_temporary",
+    "word": ["仮"],
+    "category": "production",
+    "意味": "仮置き・暫定状態であることを示す。最終決定ではない。"
+  },
+  {
+    "id": "expression_smile",
+    "word": ["ニヤリ"],
+    "category": "expression",
+    "意味": "口元だけでわずかに笑う表情。感情や心理状態を示す演出指定。"
+  },
+  {
+    "id": "effect_hv",
+    "word": ["H.V.", "HV"],
+    "category": "effect",
+    "意味": "画面に振動や揺れを与える演出指定。衝撃、不安、緊張感などを表現する目的で用いられる。スタジオや演出家によって手ブレ風や強い画面揺れを指す場合がある。"
+  },
+  {
+    "id": "production_ac",
+    "word": ["A.C.", "AC"],
+    "category": "production",
+    "意味": "動作やアクションを主体とするカットであることを示す制作上のメモ。会話主体ではなく、作画や動線を重視する意図を共有するために用いられる。"
+  }
+]
