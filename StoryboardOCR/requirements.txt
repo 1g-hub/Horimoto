@@ -1,0 +1,19 @@
+# requirements.txt
+# pip install -U "transformers>=4.57.1" accelerate safetensors tokenizers
+# pip install -U torchvision
+torch>=2.3.0
+# transformers>=4.40.1
+tokenizers>=0.19.1
+accelerate>=0.29.3
+# flash-attn>=2.5.8
+# packaging
+datasets
+trl
+matplotlib
+peft
+tensorboard
+bitsandbytes
+pdf2image
+pillow
+pymupdf
+python-docx
