@@ -1,4 +1,4 @@
-# Storyboard Understanding Pipeline (VLM + CLM)
+# Storyboard code (VLM + CLM)
 
 Anime storyboard (絵コンテ) を対象に, OCR・補正・シーン説明を段階的に実行し, 説明可能な構造化データへ変換するための研究用コード.
 
